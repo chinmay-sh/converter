@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simple_calc_react/static/css/main.d1b05096.chunk.css",
+    "main.js": "/simple_calc_react/static/js/main.d44c16a2.chunk.js",
+    "main.js.map": "/simple_calc_react/static/js/main.d44c16a2.chunk.js.map",
+    "runtime-main.js": "/simple_calc_react/static/js/runtime-main.fef1f4d3.js",
+    "runtime-main.js.map": "/simple_calc_react/static/js/runtime-main.fef1f4d3.js.map",
+    "static/js/2.d1beef8c.chunk.js": "/simple_calc_react/static/js/2.d1beef8c.chunk.js",
+    "static/js/2.d1beef8c.chunk.js.map": "/simple_calc_react/static/js/2.d1beef8c.chunk.js.map",
+    "index.html": "/simple_calc_react/index.html",
+    "precache-manifest.a6b597bbbbd5a696c80bbe273f96c942.js": "/simple_calc_react/precache-manifest.a6b597bbbbd5a696c80bbe273f96c942.js",
+    "service-worker.js": "/simple_calc_react/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/simple_calc_react/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d1beef8c.chunk.js.LICENSE.txt": "/simple_calc_react/static/js/2.d1beef8c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/simple_calc_react/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fef1f4d3.js",
+    "static/js/2.d1beef8c.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.d44c16a2.chunk.js"
+  ]
+}
