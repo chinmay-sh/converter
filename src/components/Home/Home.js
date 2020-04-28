@@ -23,7 +23,7 @@ export default function Home() {
                     <Card.Text>
                         A Simple Calculator
                     </Card.Text>
-                    <Button variant="info" as={Link} to="/calc">Basic Calculator</Button>
+                    <Button variant="info" as={Link} to="/calc">RUN</Button>
                 </Card.Body>
             </Card>
           </Col>
@@ -36,7 +36,7 @@ export default function Home() {
                     <Card.Text>
                         A Simple Currency Converter
                     </Card.Text>
-                    <Button variant="info" as={Link} to="/currency">Currency Converter</Button>
+                    <Button variant="info" as={Link} to="/currency">RUN</Button>
                 </Card.Body>
             </Card>
           </Col>

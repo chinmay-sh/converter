@@ -13,7 +13,7 @@ import logo from '../../logo.svg';
 
 export default function Routes(){
     return(
-      <Router>
+      <Router basename="/Calculator">
         <div>
             <Container fluid>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
