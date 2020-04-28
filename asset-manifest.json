@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/simple_calc_react/static/css/main.d1b05096.chunk.css",
-    "main.js": "/simple_calc_react/static/js/main.d44c16a2.chunk.js",
-    "main.js.map": "/simple_calc_react/static/js/main.d44c16a2.chunk.js.map",
-    "runtime-main.js": "/simple_calc_react/static/js/runtime-main.fef1f4d3.js",
-    "runtime-main.js.map": "/simple_calc_react/static/js/runtime-main.fef1f4d3.js.map",
-    "static/js/2.d1beef8c.chunk.js": "/simple_calc_react/static/js/2.d1beef8c.chunk.js",
-    "static/js/2.d1beef8c.chunk.js.map": "/simple_calc_react/static/js/2.d1beef8c.chunk.js.map",
-    "index.html": "/simple_calc_react/index.html",
-    "precache-manifest.43d09a812149ee9ef7989014b00eaa21.js": "/simple_calc_react/precache-manifest.43d09a812149ee9ef7989014b00eaa21.js",
-    "service-worker.js": "/simple_calc_react/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/simple_calc_react/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.d1beef8c.chunk.js.LICENSE.txt": "/simple_calc_react/static/js/2.d1beef8c.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/simple_calc_react/static/media/logo.5d5d9eef.svg"
+    "main.css": "/Calculator/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Calculator/static/js/main.e0e974da.chunk.js",
+    "main.js.map": "/Calculator/static/js/main.e0e974da.chunk.js.map",
+    "runtime-main.js": "/Calculator/static/js/runtime-main.9b26f77d.js",
+    "runtime-main.js.map": "/Calculator/static/js/runtime-main.9b26f77d.js.map",
+    "static/js/2.d1beef8c.chunk.js": "/Calculator/static/js/2.d1beef8c.chunk.js",
+    "static/js/2.d1beef8c.chunk.js.map": "/Calculator/static/js/2.d1beef8c.chunk.js.map",
+    "index.html": "/Calculator/index.html",
+    "precache-manifest.a02fc107ad351fc483a5fd3b5696fdfe.js": "/Calculator/precache-manifest.a02fc107ad351fc483a5fd3b5696fdfe.js",
+    "service-worker.js": "/Calculator/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/Calculator/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d1beef8c.chunk.js.LICENSE.txt": "/Calculator/static/js/2.d1beef8c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Calculator/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fef1f4d3.js",
+    "static/js/runtime-main.9b26f77d.js",
     "static/js/2.d1beef8c.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.d44c16a2.chunk.js"
+    "static/js/main.e0e974da.chunk.js"
   ]
 }
