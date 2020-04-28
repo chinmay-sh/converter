@@ -19,7 +19,7 @@ export default function Home() {
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto" }}>
                 <Card.Img variant="top" src={CalcImg} />
                 <Card.Body>
-                    <Card.Title>Calculator</Card.Title>
+                    <Card.Title><h3>Calculator</h3></Card.Title>
                     <Card.Text>
                         A Simple Calculator
                     </Card.Text>
@@ -32,7 +32,7 @@ export default function Home() {
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto"  }}>
                 <Card.Img variant="top" src={currencyImg} />
                 <Card.Body>
-                    <Card.Title>Currency Converter</Card.Title>
+                    <Card.Title><h3>Currency Converter</h3></Card.Title>
                     <Card.Text>
                         A Simple Currency Converter
                     </Card.Text>
