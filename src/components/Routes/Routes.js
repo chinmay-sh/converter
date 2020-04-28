@@ -30,11 +30,12 @@ export default function Routes(){
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link eventKey="2"  as={Link} to="/calc">Calculator</Nav.Link>
-                        <Nav.Link eventKey="3"  as={Link} to="/currency">Currency Convertor</Nav.Link>
+                <Navbar.Collapse id="responsive-navbar-nav" >
+                    <Nav className="ml-auto" >
+                        {/* eventKey is required for collapse on select to work */}
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="1" as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="2"  as={Link} to="/calc">Calculator</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3"  as={Link} to="/currency">Currency Convertor</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
