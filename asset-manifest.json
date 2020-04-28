@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/Calculator/static/css/main.a89fba8d.chunk.css",
-    "main.js": "/Calculator/static/js/main.7b08b605.chunk.js",
-    "main.js.map": "/Calculator/static/js/main.7b08b605.chunk.js.map",
+    "main.css": "/Calculator/static/css/main.5734bc06.chunk.css",
+    "main.js": "/Calculator/static/js/main.a12b1a75.chunk.js",
+    "main.js.map": "/Calculator/static/js/main.a12b1a75.chunk.js.map",
     "runtime-main.js": "/Calculator/static/js/runtime-main.9b26f77d.js",
     "runtime-main.js.map": "/Calculator/static/js/runtime-main.9b26f77d.js.map",
     "static/css/2.69121389.chunk.css": "/Calculator/static/css/2.69121389.chunk.css",
-    "static/js/2.b2243173.chunk.js": "/Calculator/static/js/2.b2243173.chunk.js",
-    "static/js/2.b2243173.chunk.js.map": "/Calculator/static/js/2.b2243173.chunk.js.map",
+    "static/js/2.5d9b82a9.chunk.js": "/Calculator/static/js/2.5d9b82a9.chunk.js",
+    "static/js/2.5d9b82a9.chunk.js.map": "/Calculator/static/js/2.5d9b82a9.chunk.js.map",
     "index.html": "/Calculator/index.html",
-    "precache-manifest.25efd138930e94f69b6ad19219f2ea6d.js": "/Calculator/precache-manifest.25efd138930e94f69b6ad19219f2ea6d.js",
+    "precache-manifest.46a3ac61629d53e45ffa062b359a2a34.js": "/Calculator/precache-manifest.46a3ac61629d53e45ffa062b359a2a34.js",
     "service-worker.js": "/Calculator/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/Calculator/static/css/2.69121389.chunk.css.map",
-    "static/css/main.a89fba8d.chunk.css.map": "/Calculator/static/css/main.a89fba8d.chunk.css.map",
-    "static/js/2.b2243173.chunk.js.LICENSE.txt": "/Calculator/static/js/2.b2243173.chunk.js.LICENSE.txt",
+    "static/css/main.5734bc06.chunk.css.map": "/Calculator/static/css/main.5734bc06.chunk.css.map",
+    "static/js/2.5d9b82a9.chunk.js.LICENSE.txt": "/Calculator/static/js/2.5d9b82a9.chunk.js.LICENSE.txt",
+    "static/media/calcImg.svg": "/Calculator/static/media/calcImg.07d11237.svg",
+    "static/media/currencyConvImg.svg": "/Calculator/static/media/currencyConvImg.59f032e0.svg",
     "static/media/logo.svg": "/Calculator/static/media/logo.07d11237.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9b26f77d.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.b2243173.chunk.js",
-    "static/css/main.a89fba8d.chunk.css",
-    "static/js/main.7b08b605.chunk.js"
+    "static/js/2.5d9b82a9.chunk.js",
+    "static/css/main.5734bc06.chunk.css",
+    "static/js/main.a12b1a75.chunk.js"
   ]
 }
