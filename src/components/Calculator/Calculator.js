@@ -21,31 +21,31 @@ function Calc() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        <Button size="lg" variant="info" >C</Button>
+                    <Col className="buttonCol">
+                        <Button size="lg" variant="danger" >C</Button>
                     </Col>
-                    <Col>
-                        <Button size="lg" variant="info" >/</Button>
+                    <Col className="buttonCol">
+                        <Button size="lg" variant="warning" >/</Button>
                     </Col>
-                    <Col>
-                        <Button size="lg" variant="info" >*</Button>
+                    <Col className="buttonCol">
+                        <Button size="lg" variant="warning" >*</Button>
                     </Col>
-                    <Col>
-                        <Button size="lg" variant="info" >-</Button>
+                    <Col className="buttonCol">
+                        <Button size="lg" variant="warning" >-</Button>
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col className="buttonCol">
                         <Button size="lg" variant="info" >7</Button>
                     </Col>
-                    <Col>
+                    <Col className="buttonCol">
                         <Button size="lg" variant="info" >8</Button>
                     </Col>
                     <Col>
                         <Button size="lg" variant="info" >9</Button>
                     </Col>
                     <Col>
-                        <Button size="lg" variant="info" >+</Button>
+                        <Button size="lg" variant="warning" >+</Button>
                     </Col>
                 </Row>
                 <Row>
@@ -59,7 +59,7 @@ function Calc() {
                         <Button size="lg" variant="info" >6</Button>
                     </Col>
                     <Col>
-                        <Button size="lg" variant="info" >x^2</Button>
+                        <Button size="lg" variant="warning" >x^2</Button>
                     </Col>
                 </Row>
                 <Row>
@@ -73,7 +73,7 @@ function Calc() {
                         <Button size="lg" variant="info" >3</Button>
                     </Col>
                     <Col>
-                        <Button size="lg" variant="info" >=</Button>
+                        <Button size="lg" variant="success" >=</Button>
                     </Col>
                 </Row>
             </Container>
