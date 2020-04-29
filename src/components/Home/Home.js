@@ -17,7 +17,7 @@ export default function Home() {
           <Col>
           <br />
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto" }}>
-                <Card.Img variant="top" src={CalcImg} />
+                <Card.Img variant="top" src={CalcImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
                     <Card.Title><h3>Calculator</h3></Card.Title>
                     <Card.Text>
@@ -30,7 +30,7 @@ export default function Home() {
           <Col>
           <br/>
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto"  }}>
-                <Card.Img variant="top" src={currencyImg} />
+                <Card.Img variant="top" src={currencyImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
                     <Card.Title><h3>Currency Converter</h3></Card.Title>
                     <Card.Text>
