@@ -1,10 +1,20 @@
 import React from 'react';
-
+import {Container, Row, Col} from 'react-bootstrap';
 
 
 
 function Currency() {
-    return <h2>Currency</h2>;
+    return(
+      <div>
+        <Container>
+          <Row>
+            <Col>
+              Hi
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
   }
 
 

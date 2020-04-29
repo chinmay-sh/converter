@@ -3,7 +3,7 @@ import Home from '../Home/Home';
 import Calc from '../Calculator/Calculator';
 import Currency from '../CurrencyConvertor/CurrencyConvertor';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link
@@ -13,7 +13,7 @@ import logo from '../../logo.svg';
 
 export default function Routes(){
     return(
-      <Router basename="/Calculator">
+      <Router basename={process.env.PUBLIC_URL + '/'}>
         <div>
             <Container fluid>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

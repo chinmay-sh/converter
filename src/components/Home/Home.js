@@ -14,7 +14,8 @@ export default function Home() {
             </Row>
             <br />
         <Row>
-          <Col>
+          {/* 
+            <Col>
           <br />
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto" }}>
                 <Card.Img variant="top" src={CalcImg} style={{width:"70%",margin:"auto"}} />
@@ -27,6 +28,7 @@ export default function Home() {
                 </Card.Body>
             </Card>
           </Col>
+          */}
           <Col>
           <br/>
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto"  }}>
