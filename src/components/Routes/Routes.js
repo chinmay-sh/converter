@@ -1,12 +1,13 @@
 import React from 'react';
 import Home from '../Home/Home';
-import Calc from '../Calculator/Calculator';
 import Currency from '../CurrencyConvertor/CurrencyConvertor';
+import Weight from '../WeightConverter/WeightConverter';
+import NoMatch from '../NoMatch/NoMatch';
 import {
     HashRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
   } from "react-router-dom";
 import {Nav,Navbar,Container} from 'react-bootstrap';
 import logo from '../../logo.svg';
@@ -18,7 +19,7 @@ export default function Routes(){
             <Container fluid>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand>
-                    <Link to="/" style={{ textDecoration: 'none',color:"white" }}>
+                    <NavLink to="/" exact activeClassName="active" style={{ textDecoration: 'none',color:"white" }}>
                         CloudMark {' '}
                         <img
                             alt=""
@@ -27,15 +28,15 @@ export default function Routes(){
                             height="30"
                             className="d-inline-block align-top"
                         />
-                    </Link>
+                    </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="ml-auto" >
                         {/* eventKey is required for collapse on select to work */}
-                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="1" as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="2"  as={Link} to="/calc">Calculator</Nav.Link>
-                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3"  as={Link} to="/currency">Currency Convertor</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="1" activeClassName="active" as={NavLink} to="/">Home</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="2" activeClassName="active" as={NavLink} to="/weight">Weight Converter</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3" activeClassName="active" as={NavLink} to="/currency">Currency Convertor</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -44,15 +45,16 @@ export default function Routes(){
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/calc">
-              <Calc />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/weight">
+              <Weight/>
             </Route>
             <Route path="/currency">
               <Currency />
             </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+            <Route component={NoMatch}/>
           </Switch>
         </div>
       </Router>

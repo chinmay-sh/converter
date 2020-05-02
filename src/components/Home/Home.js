@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container,Row, Col,Button,Card} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
-import CalcImg from './assets/calcImg.svg';
+import {NavLink} from 'react-router-dom';
+import weightImg from './assets/weightConvImg.svg';
 import currencyImg from './assets/currencyConvImg.svg';
 
 export default function Home() {
@@ -14,31 +14,27 @@ export default function Home() {
             </Row>
             <br />
         <Row>
-          {/* 
-            <Col>
-          <br />
+
+          <Col>
+            <br />
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto" }}>
-                <Card.Img variant="top" src={CalcImg} style={{width:"70%",margin:"auto"}} />
+                <Card.Img variant="top" src={weightImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
-                    <Card.Title><h3>Calculator</h3></Card.Title>
-                    <Card.Text>
-                        A Simple Calculator
-                    </Card.Text>
-                    <Button variant="info" as={Link} to="/calc">RUN</Button>
+                    <Card.Title>Weight Converter</Card.Title>
+                    
+                    <Button variant="info" as={NavLink} activeClassName="active" to="/weight">RUN</Button>
                 </Card.Body>
             </Card>
           </Col>
-          */}
+
           <Col>
           <br/>
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto"  }}>
                 <Card.Img variant="top" src={currencyImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
-                    <Card.Title><h3>Currency Converter</h3></Card.Title>
-                    <Card.Text>
-                        A Simple Currency Converter
-                    </Card.Text>
-                    <Button variant="info" as={Link} to="/currency">RUN</Button>
+                    <Card.Title>Currency Converter</Card.Title>
+                    
+                    <Button variant="info" as={NavLink} activeClassName="active" to="/currency">RUN</Button>
                 </Card.Body>
             </Card>
           </Col>
