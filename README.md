@@ -2,7 +2,7 @@
 
 Deployed to GitHub Pages : https://the-redlord.github.io/converter/
 
-A Simple BMI Calculator built using ReactJS.
+A Simple Converter built using ReactJS.
 
 ## Getting Started
 
