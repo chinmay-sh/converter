@@ -1,4 +1,4 @@
-# Universal Calculator [![gh-pages](https://img.shields.io/badge/gh--pages-deployed-blue?logo=github)](https://the-redlord.github.io/converter/)
+# Universal Converter [![gh-pages](https://img.shields.io/badge/gh--pages-deployed-blue?logo=github)](https://the-redlord.github.io/converter/)
 
 Deployed to GitHub Pages : https://the-redlord.github.io/converter/
 
@@ -6,7 +6,7 @@ A Simple BMI Calculator built using ReactJS.
 
 ## Getting Started
 
-1. git clone https://github.com/the-redlord/Calculator.git
+1. git clone https://github.com/the-redlord/converter.git
 2. npm install
 4. npm start
 
