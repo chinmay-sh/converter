@@ -7,7 +7,8 @@ import {
     HashRouter as Router,
     Switch,
     Route,
-    NavLink
+    NavLink,
+    Redirect
   } from "react-router-dom";
 import {Nav,Navbar,Container} from 'react-bootstrap';
 import logo from '../../logo.svg';
@@ -54,7 +55,8 @@ export default function Routes(){
             <Route path="/currency">
               <Currency />
             </Route>
-            <Route component={NoMatch}/>
+            <Route path="/404" component={NoMatch}/>
+            <Redirect to="/404" />
           </Switch>
         </div>
       </Router>

@@ -9,7 +9,7 @@ export default function Home() {
         <Container fluid>
             <Row>
                 <Col>
-                    <h2>Welcome to Universal Calculator</h2>
+                    <h2>Welcome to Universal Converter</h2>
                 </Col>
             </Row>
             <br />
