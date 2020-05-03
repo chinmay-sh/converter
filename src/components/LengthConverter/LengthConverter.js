@@ -19,15 +19,15 @@ function Length() {
 
     function handleInpUnitChange(key){
       setInpUnit(elements[key]);
-      setInpLength('');
-      setConvLength('');
+      // setInpLength('');
+      // setConvLength('');
     }
 
     function handleOutUnitChange(key){
      
       setOutUnit(elements[key]);
-      setInpLength('');
-      setConvLength('');
+      // setInpLength('');
+      // setConvLength('');
       
     }
 
