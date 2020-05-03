@@ -12,6 +12,7 @@ import {
   } from "react-router-dom";
 import {Nav,Navbar,Container} from 'react-bootstrap';
 import logo from '../../logo.svg';
+import Length from '../LengthConverter/LengthConverter';
 
 export default function Routes(){
     return(
@@ -54,6 +55,9 @@ export default function Routes(){
             </Route>
             <Route path="/currency">
               <Currency />
+            </Route>
+            <Route path="/length">
+              <Length />
             </Route>
             <Route path="/404" component={NoMatch}/>
             <Redirect to="/404" />
