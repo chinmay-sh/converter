@@ -43,7 +43,7 @@ function Mass() {
           <br/>
           <Row>
             <Col lg={8} className="textCol">
-              <TextField extension={inpUnit} placeholder="Enter Mass" elements={elements} aria="Mass input" 
+              <TextField extension={inpUnit} type="number" placeholder="Enter Mass" elements={elements} aria="Mass input" 
                 value={inpWeight} 
                 onChange={handleInpWeightChange}
                 onUnitChange={handleInpUnitChange}/>

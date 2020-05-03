@@ -10,9 +10,10 @@ import {
     NavLink,
     Redirect
   } from "react-router-dom";
-import {Nav,Navbar,Container} from 'react-bootstrap';
+import {Nav,Navbar,Container,NavDropdown} from 'react-bootstrap';
 import logo from '../../logo.svg';
 import Length from '../LengthConverter/LengthConverter';
+import github from './assets/github.svg';
 
 export default function Routes(){
     return(
@@ -37,8 +38,14 @@ export default function Routes(){
                     <Nav className="ml-auto" >
                         {/* eventKey is required for collapse on select to work */}
                         <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="1" activeClassName="active" as={NavLink} to="/">Home</Nav.Link>
-                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="2" activeClassName="active" as={NavLink} to="/mass">Mass Converter</Nav.Link>
-                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3" activeClassName="active" as={NavLink} to="/currency">Currency Convertor</Nav.Link>
+                        <NavDropdown title="Tools" id="nav-dropdown">
+                          <NavDropdown.Item eventKey="2.1" activeClassName="active" as={NavLink} to="/mass">Mass Converter</NavDropdown.Item>
+                          <NavDropdown.Item eventKey="2.2" activeClassName="active" as={NavLink} to="/currency">Currency Convertor</NavDropdown.Item>
+                          <NavDropdown.Item eventKey="2.3" activeClassName="active" as={NavLink} to="/length">Length Convertor</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3" activeClassName="active" as={NavLink} to="/about">About</Nav.Link>
+                        <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="4" href="https://github.com/the-redlord/converter" target="_blank">
+                          <img src={github} width="20" height="20" />{' '}GitHub</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -61,7 +61,7 @@ function Currency() {
           <br/>
           <Row>
             <Col lg={8} className="textCol">
-              <TextField extension={inpUnit} placeholder="Enter Currency" elements={elements} aria="Currency input" 
+              <TextField extension={inpUnit} type="number" placeholder="Enter Currency" elements={elements} aria="Currency input" 
                 value={inpCurrency} 
                 onChange={handleInpCurrencyChange}
                 onUnitChange={handleInpUnitChange}/>

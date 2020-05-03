@@ -21,7 +21,7 @@ function TextField(props) {
             aria-label={props.aria}
             aria-describedby="basic-addon2"
             value={props.value}
-            type="number"
+            type={props.type}
             readOnly={props.readOnly}
             onChange={e=>{
                 props.onChange(e.target.value)

@@ -24,9 +24,11 @@ function Length() {
     }
 
     function handleOutUnitChange(key){
+     
       setOutUnit(elements[key]);
       setInpLength('');
       setConvLength('');
+      
     }
 
     return(
@@ -43,7 +45,7 @@ function Length() {
           <br/>
           <Row>
             <Col lg={8} className="textCol">
-              <TextField extension={inpUnit} placeholder="Enter Length" elements={elements} aria="Length input" 
+              <TextField extension={inpUnit} type="number" placeholder="Enter Length" elements={elements} aria="Length input" 
                 value={inpLength} 
                 onChange={handleInpLengthChange}
                 onUnitChange={handleInpUnitChange}/>
