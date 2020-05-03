@@ -19,20 +19,26 @@ function Mass() {
 
     function handleInpUnitChange(key){
       setInpUnit(elements[key]);
+      setInpWeight('');
+      setConvWeight('');
     }
 
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
+      setInpWeight('');
+      setConvWeight('');
     }
 
     return(
       <div>
         <Container fluid="sm">
+          <br/>
           <Row>
             <Col>
               <h3>Mass Converter</h3>
             </Col>
           </Row>
+          <br/>
           <br/>
           <br/>
           <Row>
@@ -43,6 +49,7 @@ function Mass() {
                 onUnitChange={handleInpUnitChange}/>
             </Col>
           </Row>
+          <br/>
           <br/>
           <Row>
             <Col lg={8} className="textCol">
