@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
-import './WeightConverter.css';
+import './MassConverter.css';
 
-function Weight() {
+function Mass() {
     const [inpWeight, setWeight] = useState('');
     const [convWeight, setConvWeight] = useState('');
 
@@ -18,20 +18,20 @@ function Weight() {
         <Container fluid="md">
           <Row>
             <Col>
-              <h3>Weight Converter</h3>
+              <h3>Mass Converter</h3>
             </Col>
           </Row>
           <br/>
           <br/>
           <Row>
-            <Col lg={8}>
-              <TextField extension="kg" placeholder="Enter Weight" aria="Weight input" value={inpWeight} onChange={handleInpWeightChange}/>
+            <Col lg={8} className="textCol">
+              <TextField extension="kg" placeholder="Enter Mass" aria="Mass input" value={inpWeight} onChange={handleInpWeightChange}/>
             </Col>
           </Row>
           <br/>
           <Row>
-          <Col lg={8}>
-              <TextField disabled extension="kg" placeholder="Converted Weight" aria="Weight input" value={convWeight}/>
+          <Col lg={8} className="textCol">
+              <TextField extension="kg" placeholder="Converted Mass" aria="Mass input" value={convWeight}/>
             </Col>
           </Row>
         </Container>
@@ -41,4 +41,4 @@ function Weight() {
 
 
 
-export default Weight;
+export default Mass;

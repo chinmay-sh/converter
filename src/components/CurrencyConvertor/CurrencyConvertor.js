@@ -23,13 +23,13 @@ function Currency() {
           <br/>
           <br/>
           <Row>
-            <Col lg={8}>
+            <Col lg={8} className="textCol">
               <TextField extension="kg" placeholder="Enter Weight" aria="Weight input" value={inpWeight} onChange={handleInpWeightChange}/>
             </Col>
           </Row>
           <br/>
           <Row>
-          <Col lg={8}>
+          <Col lg={8} className="textCol">
               <TextField disabled extension="kg" placeholder="Converted Weight" aria="Weight input" value={convWeight}/>
             </Col>
           </Row>
