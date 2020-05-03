@@ -30,7 +30,7 @@ function Currency() {
           <br/>
           <Row>
           <Col lg={8} className="textCol">
-              <TextField disabled extension="kg" placeholder="Converted Weight" aria="Weight input" value={convWeight}/>
+              <TextField readOnly extension="kg" placeholder="Converted Weight" aria="Weight input" value={convWeight}/>
             </Col>
           </Row>
         </Container>

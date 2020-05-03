@@ -20,8 +20,7 @@ export default function Home() {
             <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto" }}>
                 <Card.Img variant="top" src={weightImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
-                    <Card.Title>Mass Converter</Card.Title>
-                    
+                    <Card.Title>Mass Converter</Card.Title>  
                     <Button variant="info" as={NavLink} activeClassName="active" to="/mass">RUN</Button>
                 </Card.Body>
             </Card>
@@ -33,7 +32,6 @@ export default function Home() {
                 <Card.Img variant="top" src={currencyImg} style={{width:"70%",margin:"auto"}} />
                 <Card.Body>
                     <Card.Title>Currency Converter</Card.Title>
-                    
                     <Button variant="info" as={NavLink} activeClassName="active" to="/currency">RUN</Button>
                 </Card.Body>
             </Card>

@@ -2,20 +2,32 @@ import React,{useState} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
 import './MassConverter.css';
+import convert from 'convert-units';
 
 function Mass() {
-    const [inpWeight, setWeight] = useState('');
+    const [inpWeight, setInpWeight] = useState('');
     const [convWeight, setConvWeight] = useState('');
+    const elements = convert().possibilities('mass');
+    const [inpUnit,setInpUnit] = useState(elements[0]);
+    const [outUnit,setOutUnit] = useState(elements[0]);
 
 
     function handleInpWeightChange(newWeight){
-      setWeight(newWeight);
+      setInpWeight(newWeight);
+      setConvWeight(convert(newWeight).from(inpUnit).to(outUnit));
     }
 
+    function handleInpUnitChange(key){
+      setInpUnit(elements[key]);
+    }
+
+    function handleOutUnitChange(key){
+      setOutUnit(elements[key]);
+    }
 
     return(
       <div>
-        <Container fluid="md">
+        <Container fluid="sm">
           <Row>
             <Col>
               <h3>Mass Converter</h3>
@@ -25,13 +37,18 @@ function Mass() {
           <br/>
           <Row>
             <Col lg={8} className="textCol">
-              <TextField extension="kg" placeholder="Enter Mass" aria="Mass input" value={inpWeight} onChange={handleInpWeightChange}/>
+              <TextField extension={inpUnit} placeholder="Enter Mass" elements={elements} aria="Mass input" 
+                value={inpWeight} 
+                onChange={handleInpWeightChange}
+                onUnitChange={handleInpUnitChange}/>
             </Col>
           </Row>
           <br/>
           <Row>
-          <Col lg={8} className="textCol">
-              <TextField extension="kg" placeholder="Converted Mass" aria="Mass input" value={convWeight}/>
+            <Col lg={8} className="textCol">
+              <TextField readOnly extension={outUnit} placeholder="Converted Mass" elements={elements} aria="Mass output" 
+              value={convWeight}
+              onUnitChange={handleOutUnitChange}/>
             </Col>
           </Row>
         </Container>
