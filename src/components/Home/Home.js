@@ -4,6 +4,7 @@ import {NavLink} from 'react-router-dom';
 import weightImg from './assets/weightConvImg.svg';
 import currencyImg from './assets/currencyConvImg.svg';
 import lengthImg from './assets/lengthConvImg.svg';
+import timeImg from './assets/timeConvImg.svg';
 
 export default function Home() {
     return(
@@ -48,6 +49,19 @@ export default function Home() {
                 </Card.Body>
             </Card>
           </Col>
+        </Row>
+        <br/>
+        <Row>
+          <Col>
+            <br/>
+              <Card bg="dark" style={{ width: '18rem',borderRadius:"20px",margin:"auto"  }}>
+                  <Card.Img variant="top" src={timeImg} style={{width:"70%",margin:"auto"}} />
+                  <Card.Body>
+                      <Card.Title>Time Converter</Card.Title>
+                      <Button variant="info" as={NavLink} activeClassName="active" to="/time">RUN</Button>
+                  </Card.Body>
+              </Card>
+            </Col>
         </Row>
         <br/>
       </Container>
