@@ -19,15 +19,15 @@ function Mass() {
 
     function handleInpUnitChange(key){
       setInpUnit(elements[key]);
-      setInpWeight('');
-      setConvWeight('');
     }
 
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
-      setInpWeight('');
-      setConvWeight('');
     }
+
+    React.useEffect(()=>{
+      setConvWeight(convert(inpWeight).from(inpUnit).to(outUnit));
+    },[inpUnit,outUnit]);
 
     return(
       <div>

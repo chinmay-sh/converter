@@ -28,7 +28,7 @@ function TextField(props) {
             }}
             />
             <Dropdown onSelect={(key,event)=>{
-                    console.log(`${props.placeholder} : ${elements[key]}`)
+                    {/*console.log(`${props.placeholder} : ${elements[key]}`)*/}
                     props.onUnitChange(key)
                 }}>
                 <Dropdown.Toggle variant="success" id="input-group-dropdown-2">

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
 import './LengthConverter.css';
@@ -13,23 +13,23 @@ function Length() {
 
 
     function handleInpLengthChange(newLength){
-      setInpLength(newLength);
+      setInpLength(prevLength => prevLength = newLength);
       setConvLength(convert(newLength).from(inpUnit).to(outUnit));
     }
 
     function handleInpUnitChange(key){
-      setInpUnit(elements[key]);
-      // setInpLength('');
-      // setConvLength('');
+      setInpUnit(prevInputUnit => prevInputUnit = elements[key]);
     }
 
     function handleOutUnitChange(key){
-     
       setOutUnit(elements[key]);
-      // setInpLength('');
-      // setConvLength('');
-      
+      console.log('old' + outUnit)
     }
+
+    // use effect to access the most current state of the state variables that are async in nature
+    useEffect(()=>{
+      setConvLength(convert(inpLength).from(inpUnit).to(outUnit));
+    },[inpUnit,outUnit]);
 
     return(
       <div>
