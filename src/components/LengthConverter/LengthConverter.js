@@ -23,7 +23,6 @@ function Length() {
 
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
-      console.log('old' + outUnit)
     }
 
     // use effect to access the most current state of the state variables that are async in nature

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import './CurrencyConvertor.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
-import { findAllByDisplayValue } from '@testing-library/react';
+import axios from 'axios';
 
 
 function Currency() {
@@ -21,30 +21,25 @@ function Currency() {
 
     function handleInpUnitChange(key){
       setInpUnit(elements[key]);
-      // setInpCurrency('');
-      // setConvCurrency('');
     }
 
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
-      // setInpCurrency('');
-      // setConvCurrency('');
     }
 
     async function convert(){
-      const response = await fetch('https://neutrinoapi.net/convert', {
-        method: 'POST', headers: { 'Content-type': 'application/json'},
-        body: JSON.stringify({
+      const response = await axios.post(
+        'https://neutrinoapi.net/convert',
+        {
           'user-id': 'redlord',
     	    'api-key': 'dWBezecu9Ie8vtSrdIHVzAWoq6CdbhIJ0hdVByjJG5pfFxfu',
           'from-value':'10',
           'from-type':'USD',
           'to-type':'INR'
-        })
-      });
-      const json = await response.json();
-      setResponse({data: json});
-      console.log(apiResponse)
+        },
+        { headers: { 'Content-Type': 'application/json' } }
+      )
+      console.log(response.data);
     };
 
     return(
