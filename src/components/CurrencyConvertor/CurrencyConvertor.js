@@ -26,12 +26,12 @@ function Currency() {
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
     }
-/*
+
     async function corstest(){
-      const respone = await axios.get('https://hj8spoca8g.execute-api.us-east-1.amazonaws.com/dev/proxy?url=https://cloudmark-api.herokuapp.com/tags/');
+      const respone = await axios.get('https://g39bxq7c7c.execute-api.us-east-1.amazonaws.com/dev/');
       console.log(respone)
     }
-
+/*
     async function corstest1(){
       const respone = await axios.delete('http://localhost:4000/dev/proxy?url=https://cloudmark-api.herokuapp.com/tags/2',
       {
@@ -46,7 +46,7 @@ function Currency() {
     }
 */
     async function convert(){
-      const url_cors_prefix = 'https://hj8spoca8g.execute-api.us-east-1.amazonaws.com/dev/proxy?url=';
+      const url_cors_prefix = 'https://g39bxq7c7c.execute-api.us-east-1.amazonaws.com/dev/proxy?url=';
       const response = await axios.post(
         url_cors_prefix + 'https://neutrinoapi.net/convert',
         {
@@ -94,7 +94,7 @@ function Currency() {
           <br/>
           <Row>
             <Col>
-              <Button onClick={convert}>CONVERT</Button>
+              <Button onClick={corstest}>CONVERT</Button>
             </Col>
           </Row>
         </Container>
