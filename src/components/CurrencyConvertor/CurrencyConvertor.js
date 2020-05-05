@@ -26,10 +26,29 @@ function Currency() {
     function handleOutUnitChange(key){
       setOutUnit(elements[key]);
     }
+/*
+    async function corstest(){
+      const respone = await axios.get('https://hj8spoca8g.execute-api.us-east-1.amazonaws.com/dev/proxy?url=https://cloudmark-api.herokuapp.com/tags/');
+      console.log(respone)
+    }
 
+    async function corstest1(){
+      const respone = await axios.delete('http://localhost:4000/dev/proxy?url=https://cloudmark-api.herokuapp.com/tags/2',
+      {
+        "link":"https://www.mouse.com",
+        "title":"mouse",
+        "publisher":"mouse"
+      },
+      {
+        headers: { 'Content-Type': 'application/json' }
+      });
+      console.log(respone.data)
+    }
+*/
     async function convert(){
+      const url_cors_prefix = 'https://hj8spoca8g.execute-api.us-east-1.amazonaws.com/dev/proxy?url=';
       const response = await axios.post(
-        'https://neutrinoapi.net/convert',
+        url_cors_prefix + 'https://neutrinoapi.net/convert',
         {
           'user-id': 'redlord',
     	    'api-key': 'dWBezecu9Ie8vtSrdIHVzAWoq6CdbhIJ0hdVByjJG5pfFxfu',
