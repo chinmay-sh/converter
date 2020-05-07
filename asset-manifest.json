@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/converter/static/css/main.a87b44b1.chunk.css",
-    "main.js": "/converter/static/js/main.dbc8dafc.chunk.js",
-    "main.js.map": "/converter/static/js/main.dbc8dafc.chunk.js.map",
+    "main.css": "/converter/static/css/main.d8edfd3a.chunk.css",
+    "main.js": "/converter/static/js/main.a1ef36df.chunk.js",
+    "main.js.map": "/converter/static/js/main.a1ef36df.chunk.js.map",
     "runtime-main.js": "/converter/static/js/runtime-main.5ab50e45.js",
     "runtime-main.js.map": "/converter/static/js/runtime-main.5ab50e45.js.map",
     "static/css/2.69121389.chunk.css": "/converter/static/css/2.69121389.chunk.css",
-    "static/js/2.9ff99299.chunk.js": "/converter/static/js/2.9ff99299.chunk.js",
-    "static/js/2.9ff99299.chunk.js.map": "/converter/static/js/2.9ff99299.chunk.js.map",
+    "static/js/2.4f1d50cc.chunk.js": "/converter/static/js/2.4f1d50cc.chunk.js",
+    "static/js/2.4f1d50cc.chunk.js.map": "/converter/static/js/2.4f1d50cc.chunk.js.map",
     "index.html": "/converter/index.html",
-    "precache-manifest.b190ee8cb4aebaa9d84ebb8e8bbdf983.js": "/converter/precache-manifest.b190ee8cb4aebaa9d84ebb8e8bbdf983.js",
+    "precache-manifest.7aab5f406a075b637fae34bcf64ccd66.js": "/converter/precache-manifest.7aab5f406a075b637fae34bcf64ccd66.js",
     "service-worker.js": "/converter/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/converter/static/css/2.69121389.chunk.css.map",
-    "static/css/main.a87b44b1.chunk.css.map": "/converter/static/css/main.a87b44b1.chunk.css.map",
-    "static/js/2.9ff99299.chunk.js.LICENSE.txt": "/converter/static/js/2.9ff99299.chunk.js.LICENSE.txt",
-    "static/media/404.svg": "/converter/static/media/404.a79151a5.svg",
+    "static/css/main.d8edfd3a.chunk.css.map": "/converter/static/css/main.d8edfd3a.chunk.css.map",
+    "static/js/2.4f1d50cc.chunk.js.LICENSE.txt": "/converter/static/js/2.4f1d50cc.chunk.js.LICENSE.txt",
     "static/media/currencyConvImg.svg": "/converter/static/media/currencyConvImg.59f032e0.svg",
     "static/media/github.svg": "/converter/static/media/github.617870e4.svg",
     "static/media/lengthConvImg.svg": "/converter/static/media/lengthConvImg.f026c68b.svg",
@@ -25,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.5ab50e45.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.9ff99299.chunk.js",
-    "static/css/main.a87b44b1.chunk.css",
-    "static/js/main.dbc8dafc.chunk.js"
+    "static/js/2.4f1d50cc.chunk.js",
+    "static/css/main.d8edfd3a.chunk.css",
+    "static/js/main.a1ef36df.chunk.js"
   ]
 }
