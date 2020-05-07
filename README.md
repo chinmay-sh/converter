@@ -1,4 +1,4 @@
-# Universal Converter [![gh-pages](https://img.shields.io/badge/gh--pages-deployed-blue?logo=github)](https://the-redlord.github.io/converter/)
+# Universal Converter :sparkles: [![gh-pages](https://img.shields.io/badge/gh--pages-deployed-blue?logo=github)](https://the-redlord.github.io/converter/)
 
 Deployed to GitHub Pages : https://the-redlord.github.io/converter/
 
