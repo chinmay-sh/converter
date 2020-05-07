@@ -4,7 +4,6 @@ import {Container, Row, Col, Button} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
 import axios from 'axios';
 
-
 function Currency() {
     const [inpCurrency, setInpCurrency] = useState('');
     const [convCurrency, setConvCurrency] = useState('');
