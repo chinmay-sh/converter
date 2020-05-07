@@ -8,16 +8,14 @@ import axios from 'axios';
 function Currency() {
     const [inpCurrency, setInpCurrency] = useState('');
     const [convCurrency, setConvCurrency] = useState('');
-
-    const elements = ['USD','INR'];
+    const [elements,setElements] = useState([]);
     const [inpUnit,setInpUnit] = useState(elements[0]);
     const [outUnit,setOutUnit] = useState(elements[0]);
-    const [apiResponse,setResponse] = useState({data:[]});
+    const [exchangeRate,setExchangeRate] = useState(0);
     
     function handleInpCurrencyChange(newCurrency){
       setInpCurrency(newCurrency);
     }
-
 
     function handleInpUnitChange(key){
       setInpUnit(elements[key]);
@@ -27,39 +25,34 @@ function Currency() {
       setOutUnit(elements[key]);
     }
 
-    async function corstest(){
-      const respone = await axios.get('https://g39bxq7c7c.execute-api.us-east-1.amazonaws.com/dev/');
-      console.log(respone)
+    async function currencyListPopulater(){
+      const response = await axios.get('https://api.exchangeratesapi.io/latest');
+      var list = Object.keys(response.data.rates);
+      var listarr=[];
+      for(var i in list){
+        listarr.push(list[i]);
+      }
+      setElements(listarr);
     }
-/*
-    async function corstest1(){
-      const respone = await axios.delete('http://localhost:4000/dev/proxy?url=https://cloudmark-api.herokuapp.com/tags/2',
-      {
-        "link":"https://www.mouse.com",
-        "title":"mouse",
-        "publisher":"mouse"
-      },
-      {
-        headers: { 'Content-Type': 'application/json' }
-      });
-      console.log(respone.data)
-    }
-*/
+    
     async function convert(){
-      const url_cors_prefix = 'https://g39bxq7c7c.execute-api.us-east-1.amazonaws.com/dev/proxy?url=';
-      const response = await axios.post(
-        url_cors_prefix + 'https://neutrinoapi.net/convert',
-        {
-          'user-id': 'redlord',
-    	    'api-key': 'dWBezecu9Ie8vtSrdIHVzAWoq6CdbhIJ0hdVByjJG5pfFxfu',
-          'from-value':'10',
-          'from-type':'USD',
-          'to-type':'INR'
-        },
-        { headers: { 'Content-Type': 'application/json' } }
+      const url = `https://api.exchangeratesapi.io/latest?symbols=${outUnit}&base=${inpUnit}`;
+      const response = await axios.get(
+        url
       )
-      console.log(response.data);
+      console.log(response.data.rates[outUnit]);
+      setExchangeRate(response.data.rates[outUnit]);
     };
+
+    function calculate(){
+      setConvCurrency(inpCurrency * exchangeRate);
+    }
+
+    useEffect(()=>{  
+      currencyListPopulater();
+      convert();
+    },[inpUnit,outUnit]);
+
 
     return(
       <div>
@@ -94,7 +87,7 @@ function Currency() {
           <br/>
           <Row>
             <Col>
-              <Button onClick={corstest}>CONVERT</Button>
+              <Button onClick={calculate}>CONVERT</Button>
             </Col>
           </Row>
         </Container>
