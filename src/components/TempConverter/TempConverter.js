@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import TextField from '../TextField/TextField';
-import './TemperatureConverter.css';
+import './TempConverter.css';
 import convert from 'convert-units';
 
 function Temperature() {
