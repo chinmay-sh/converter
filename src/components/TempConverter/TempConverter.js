@@ -7,7 +7,7 @@ import convert from 'convert-units';
 function Temperature() {
     const [inpTemp, setInpTemp] = useState('');
     const [convTemp, setConvTemp] = useState('');
-    const elements = convert().possibilities('Temperature');
+    const elements = convert().possibilities('temperature');
     const [inpUnit,setInpUnit] = useState(elements[0]);
     const [outUnit,setOutUnit] = useState(elements[0]);
 
