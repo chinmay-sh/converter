@@ -45,7 +45,7 @@ export default function Routes(){
                           <NavDropdown.Item eventKey="2.2" activeClassName="active" as={NavLink} to="/currency">Currency Convertor</NavDropdown.Item>
                           <NavDropdown.Item eventKey="2.3" activeClassName="active" as={NavLink} to="/length">Length Convertor</NavDropdown.Item>
                           <NavDropdown.Item eventKey="2.4" activeClassName="active" as={NavLink} to="/time">Time Convertor</NavDropdown.Item>
-                          <NavDropdown.Item eventKey="2.4" activeClassName="active" as={NavLink} to="/temperature">Temperature Convertor</NavDropdown.Item>
+                          <NavDropdown.Item eventKey="2.5" activeClassName="active" as={NavLink} to="/temperature">Temperature Convertor</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="3" activeClassName="active" as={NavLink} to="/about">About</Nav.Link>
                         <Nav.Link style={{ textDecoration: 'none',color:"white" }} eventKey="4" href="https://github.com/the-redlord/converter" target="_blank">
