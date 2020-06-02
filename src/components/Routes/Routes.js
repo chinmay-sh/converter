@@ -24,7 +24,7 @@ export default function Routes(){
             <Container fluid>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand>
-                    <NavLink to="/" exact activeClassName="active" style={{ textDecoration: 'none',color:"white" }}>
+                    <Nav.Link href="https://the-redlord.github.io/" exact activeClassName="active" style={{ textDecoration: 'none',color:"white" }}>
                         CloudMark {' '}
                         <img
                             alt=""
@@ -33,7 +33,7 @@ export default function Routes(){
                             height="30"
                             className="d-inline-block align-top"
                         />
-                    </NavLink>
+                    </Nav.Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav" >
